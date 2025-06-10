@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no, viewport-fit=cover"/>
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="MobileOptimized" content="176">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Vite + Vue + TS</title>
+    <style type="text/css">
+        .preloader{ position: absolute; top: calc(50% - 50px); left: calc(50% + 10px); z-index: 999; }
+
+        .loader { color: #e45787; position: relative; font-size: 11px; background: #e45787; animation: escaleY 1s infinite ease-in-out;
+            width: 1em; height: 4em; animation-delay: -0.16s; }
+        .loader:before,
+        .loader:after { content: ''; position: absolute; top: 0; background: #e45787; width: 1em; height: 4em; animation: escaleY 1s infinite ease-in-out; }
+        .loader:before {  left: -2em; animation-delay: -0.32s; }
+        @keyframes escaleY {
+            0%, 80%, 100% { box-shadow: 0 0; height: 4em; }
+            40% { box-shadow: 0 -2em; height: 5em; }
+        }
+    </style>
+    <script src="https://telegram.org/js/telegram-web-app.js?57"></script>
+    <script>
+        function setThemeClass() {
+            document.documentElement.className = Telegram.WebApp.colorScheme;
+        }
+
+        Telegram.WebApp.onEvent('themeChanged', setThemeClass);
+        setThemeClass();
+    </script>
+  <script type="module" crossorigin src="/assets/index-BBon45S4.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-mcBoJFJ9.css">
+</head>
+<body>
+<div class="preloader">
+    <span class="loader"></span>
+</div>
+<div id="app"></div>
+</body>
+</html>
